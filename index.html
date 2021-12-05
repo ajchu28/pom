@@ -7,6 +7,16 @@
     --speckles-4: #E88D8D;
     --background: #CEA658;
     --highlight: #DB8484;
+    
+    --persimmon: #F38722;
+    --persimmon-stem: #4F5720;
+    --persimmon-inner-stem: #5E6726;
+    --persimmon-star: #56A531;
+    --persimmon-highlight: #F2A55D;
+    
+    --cranberry-background: #631515;
+    --stem-circle: #CB8282;
+    --cross: #613636;
   }
 
   body {
@@ -17,17 +27,143 @@
     align-items: center;
     background: rgba(206, 166, 88, 1);
   }
+  
+  .cranberry-background {
+    background-color: var(--cranberry-background);
+    width: 11%;
+    height: 10%;
+    left: 30%;
+    top: 55%;
+    background-size: 30px 30px;
+    border-radius: 50% 50% 49% 51% / 47% 52% 48% 53%;
+    background-position: 0 0, 17px 17px;
+    position: absolute;
+  }
+  
+  .stem-circle {
+    background-color: var(--stem-circle);
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 9%;
+    left: 30%;
+    border-radius: 100% 100% 80% 80%/ 100% 100% 100% 100%;
+  }
+  
+  .cross-1 {
+    background-color: var(--cross);
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 30%;
+    left: 20%;
+    border-radius: 100% 100% 80% 80%/ 100% 100% 100% 100%;
+  }
+  
+  .cross-2 {
+    background-color: var(--cross);
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 30%;
+    left: 30%;
+    border-radius: 100% 100% 80% 80%/ 100% 100% 100% 100%;
+    transform: rotate(40deg);
+  }
+  
+  .persimmon-background {
+    background-color: var(--persimmon);
+    width: 25%;
+    height: 18%;
+    border-radius: 100% 100% 80% 80%/ 100% 100% 100% 100%;
+    background-size: 30px 30px;
+    background-position: 0 0, 17px 17px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+  }
+  
+  .persimmon-inner-stem {
+    background-color: var(--persimmon-inner-stem);
+  	position: absolute;
+    left: 15%;
+    top: 10%;
+    width: 70%;
+    height: 70%;
+    border-radius: 100% 100% 80% 80%/ 100% 100% 100% 100%;
+  }
+  
+  .stem-base {
+    background-color: var(--persimmon-stem);
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    border-radius: 100% 100% 80% 80%/ 100% 100% 100% 100%;
+  }
+  
+  .star-1 {
+    background-color: var(--persimmon-stem);
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    border-radius: 49% 51% 49% 51% / 32% 32% 68% 68%;
+  }
+  
+   .star-2 {
+    background-color: var(--persimmon-stem);
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    border-radius: 49% 51% 49% 51% / 32% 32% 68% 68%;
+  }
+  
+	.star-3 {
+    background-color: var(--persimmon-stem);
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: 55%;
+    top: 0%;
+    border-radius: 49% 51% 49% 51% / 32% 32% 68% 68%;
+  }
+  
+	.star-4 {
+    background-color: var(--persimmon-stem);
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: 40%;
+    top: -10%;
+    border-radius: 49% 51% 49% 51% / 79% 82% 18% 21%;
+  }
+  
+  .persimmon-highlight {
+    background-color: var(--persimmon-highlight);
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 75%;
+    top: 30%;
+    border-radius: 80% 100% 100% 60%/ 100% 100% 100% 100%;
+    transform: rotate(40deg);
+  }
 
-  .pom-frame {
-    width: 400px;
-    height: 400px;
+  .frame {
+    width: 800px;
+    height: 800px;
     position: absolute;
   }
 
   .pomegranate {
     background-color: var(--pomegranate);
-    width: 50%;
-    height: 40%;
+    width: 25%;
+    height: 20%;
     border-radius: 80% 80% 60% 60%/ 100% 100% 100% 100%;
     background-size: 30px 30px;
     background-position: 0 0, 17px 17px;
@@ -50,7 +186,7 @@
     background-color: var(--background);
     width: 30%;
     height: 50%;
-    border-radius: 80% 80% 60% 60%/ 100% 100% 100% 100%;
+    border-radius: 60% 60% 60% 60%/ 100% 100% 100% 100%;
     position: absolute;
     left: 5%;
     top: -40%;
@@ -81,12 +217,12 @@
   
   .highlight {
     background-color: var(--highlight);
-    width: 10%;
-    height: 5%;
+    width: 20%;
+    height: 10%;
     border-radius: 80% 100% 100% 60%/ 100% 100% 100% 100%;
     position: absolute;
-    left: 50%;
-    top: 35%;
+    left: 65%;
+    top: 15%;
     transform: rotate(15deg);
   }
 
@@ -252,7 +388,7 @@
   }
 </style>
 
-<div class="pom-frame">
+<div class="frame">
   <div class="pomegranate">
     <div class="stem"></div>
     <div class="stem-neg1"></div>
@@ -284,14 +420,31 @@
       <div class="speckle-4"></div>
       <div class="speckle-4"></div>
     </div>
+    <div class="highlight"></div>
   </div>
-  <div class="highlight"></div>
 </div>
 
-<div class="tangerine-frame">
-  <div class="tangerine-background">
-    <div class="stem-base"></div>
-    <div class="stem-star"></div>
-    <div class="tangerine-highlight"></div>
+<div class="frame">
+  <div class="persimmon-background">
+    <div class="stem-star">
+      <div class="star-1"></div>
+      <div class="star-2"></div>
+      <div class="star-3"></div>
+      <div class="star-4"></div>
+    </div>
+    <div class="stem-base">
+      <div class="persimmon-inner-stem"></div>
+    </div>
+    <div class="persimmon-highlight"></div>
+  </div>
+</div>
+
+<div class="frame">
+  <div class="cranberry-background">
+    <div class="stem-circle">
+      <div class="cross-1"></div>
+      <div class="cross-2"></div>
+    </div>
+    <div class="cranberry-highlight"></div>
   </div>
 </div>

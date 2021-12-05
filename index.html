@@ -42,7 +42,7 @@
     height: 800px;
     position: absolute;
     left: -12%;
-    top: -25%;
+    top: -23%;
     transform: rotate(-10deg)
   }
   
@@ -51,7 +51,7 @@
     height: 800px;
     position: absolute;
     left: -30%;
-    top: -30%;
+    top: -29%;
     transform: rotate(-40deg);
   }
   
@@ -497,6 +497,13 @@
     top: 12%;
     left: 75%;
   }
+  
+  .snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
 </style>
 
 <div class="whole-frame">
@@ -628,26 +635,41 @@
 </div>
 </div>
 
+
 <script>
   
+function animate_1 () {
+    setTimeout(animate_1, 10000/30)
+    const div = document.createElement('div')
+    div.textContent = '❅'
+  	div.style.color = 'white'
+    div.style.position = 'absolute'
+    const x = Math.random() * innerWidth
+    div.style.left = x + 'px'
+    const y = Math.random() * innerHeight
+    div.style.top = y + 'px'
+    const s = Math.random() * 50
+    div.style.fontSize = s + 'px'
+    document.body.appendChild(div)
+  }
   
-
-  // function animate () {
-  //   setTimeout(animate, 10000/60)
-  //   // <div></div>
-  //   const div = document.createElement('div')
-  //   // <div> :-) </div>
-  //   div.textContent = '*'
-  //   div.style.position = 'absolute'
-  //   const x = Math.random() * innerWidth
-  //   div.style.left = x + 'px'
-  //   const y = Math.random() * innerHeight
-  //   div.style.top = y + 'px'
-  //   const s = Math.random() * 50
-  //   div.style.fontSize = s + 'px'
-  //   document.body.appendChild(div)
-  // }
+  animate_1()
   
-  // animate()
+  function animate_2 () {
+    setTimeout(animate_2, 10000/30)
+    const div = document.createElement('div')
+    div.textContent = '❆'
+  	div.style.color = 'white'
+    div.style.position = 'absolute'
+    const x = Math.random() * innerWidth
+    div.style.left = x + 'px'
+    const y = Math.random() * innerHeight
+    div.style.top = y + 'px'
+    const s = Math.random() * 50
+    div.style.fontSize = s + 'px'
+    document.body.appendChild(div)
+  }
+  
+  animate_2()
 
 </script>

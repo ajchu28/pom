@@ -29,6 +29,75 @@
     background: rgba(206, 166, 88, 1);
   }
   
+  .whole-frame {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+  }
+  
+  .cranberry-frame-1 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: -12%;
+    top: -25%;
+    transform: rotate(-10deg)
+  }
+  
+  .cranberry-frame-2 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: -30%;
+    top: -30%;
+    transform: rotate(-40deg);
+  }
+  
+  .cranberry-frame-3 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 40%;
+    top: -20%
+  }
+  
+  .cranberry-frame-4 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    transform: rotate(10deg);
+    left: 13%;
+    top: -16%
+  }
+
+  .cranberry-frame-5 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 18%;
+    top: -21%;
+    transform: rotate(-10deg);
+  }
+  
+    .persimmon-frame-1 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: -12%;
+    top: -3%;
+    transform: rotate(-10deg)
+  }
+  
+    .persimmon-frame-2 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 5%;
+    top: -3%;
+  }
+  
   .cranberry-background {
     background-color: var(--cranberry-background);
     width: 11%;
@@ -189,6 +258,17 @@
     width: 800px;
     height: 800px;
     position: absolute;
+    top: -8%;
+  }
+  
+  .shadow {
+    background-color: #B4904C;
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    border-radius: 51% 49% 49% 51% / 47% 52% 48% 53%;
   }
 
   .pomegranate {
@@ -419,6 +499,8 @@
   }
 </style>
 
+<div class="whole-frame">
+  <div class="shadow"></div>
 <div class="frame">
   <div class="pomegranate">
     <div class="stem"></div>
@@ -455,7 +537,7 @@
   </div>
 </div>
 
-<div class="frame">
+<div class="persimmon-frame-1">
   <div class="persimmon-background">
     <div class="stem-star">
       <div class="star-1"></div>
@@ -470,7 +552,22 @@
   </div>
 </div>
 
-<div class="frame">
+<div class="persimmon-frame-2">
+  <div class="persimmon-background">
+    <div class="stem-star">
+      <div class="star-1"></div>
+      <div class="star-2"></div>
+      <div class="star-3"></div>
+      <div class="star-4"></div>
+    </div>
+    <div class="stem-base">
+      <div class="persimmon-inner-stem"></div>
+    </div>
+    <div class="persimmon-highlight"></div>
+  </div>
+</div>
+
+<div class="cranberry-frame-1">
   <div class="cranberry-background">
     <div class="stem-circle">
       <div class="cross-1"></div>
@@ -481,3 +578,76 @@
     <div class="cranberry-highlight-3"></div>
   </div>
 </div>
+
+<div class="cranberry-frame-2">
+  <div class="cranberry-background">
+    <div class="stem-circle">
+      <div class="cross-1"></div>
+      <div class="cross-2"></div>
+    </div>
+    <div class="cranberry-highlight"></div>
+    <div class="cranberry-highlight-2"></div>
+    <div class="cranberry-highlight-3"></div>
+  </div>
+</div>
+
+<div class="cranberry-frame-3">
+  <div class="cranberry-background">
+    <div class="stem-circle">
+      <div class="cross-1"></div>
+      <div class="cross-2"></div>
+    </div>
+    <div class="cranberry-highlight"></div>
+    <div class="cranberry-highlight-2"></div>
+    <div class="cranberry-highlight-3"></div>
+  </div>
+</div>
+
+<div class="cranberry-frame-5">
+  <div class="cranberry-background">
+    <div class="stem-circle">
+      <div class="cross-1"></div>
+      <div class="cross-2"></div>
+    </div>
+    <div class="cranberry-highlight"></div>
+    <div class="cranberry-highlight-2"></div>
+    <div class="cranberry-highlight-3"></div>
+  </div>
+</div>
+
+<div class="cranberry-frame-4">
+  <div class="cranberry-background">
+    <div class="stem-circle">
+      <div class="cross-1"></div>
+      <div class="cross-2"></div>
+    </div>
+    <div class="cranberry-highlight"></div>
+    <div class="cranberry-highlight-2"></div>
+    <div class="cranberry-highlight-3"></div>
+  </div>
+</div>
+</div>
+
+<script>
+  
+  
+
+  // function animate () {
+  //   setTimeout(animate, 10000/60)
+  //   // <div></div>
+  //   const div = document.createElement('div')
+  //   // <div> :-) </div>
+  //   div.textContent = '*'
+  //   div.style.position = 'absolute'
+  //   const x = Math.random() * innerWidth
+  //   div.style.left = x + 'px'
+  //   const y = Math.random() * innerHeight
+  //   div.style.top = y + 'px'
+  //   const s = Math.random() * 50
+  //   div.style.fontSize = s + 'px'
+  //   document.body.appendChild(div)
+  // }
+  
+  // animate()
+
+</script>
